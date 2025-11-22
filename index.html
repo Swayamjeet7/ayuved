@@ -1,0 +1,552 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayurvedic Classes – Traditional Learning</title>
+  <meta name="description" content="Join offline Ayurvedic classes in Burla, Sambalpur and learn authentic principles of Ayurveda with a practical, structured approach.">
+
+  <style>
+    :root {
+      --primary: #2f6b3c;
+      --primary-light: #e5f2e9;
+      --accent: #b88746;
+      --text: #243024;
+      --muted: #6c7a6c;
+      --bg: #f9f7f2;
+      --white: #ffffff;
+      --shadow-soft: 0 18px 45px rgba(0,0,0,0.09);
+      --radius-xl: 18px;
+      --radius-full: 999px;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(249,247,242,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #f7f2d8, #2f6b3c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 0.8rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Hero */
+    section.hero {
+      padding: 1.5rem 0 2rem;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.15rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+
+    .eyebrow span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      line-height: 1.15;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-subtitle {
+      font-size: 0.96rem;
+      color: var(--muted);
+      margin-bottom: 1.1rem;
+      max-width: 32rem;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .meta-item strong {
+      color: var(--text);
+      display: block;
+      font-size: 0.86rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top left, #fdf8e8, #ffffff);
+      border-radius: var(--radius-xl);
+      padding: 1.2rem 1.2rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(0,0,0,0.03);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 10% 0%, rgba(255,255,255,0.9), transparent 55%);
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card h2 {
+      font-size: 1.02rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      font-size: 0.87rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-card ul li {
+      display: flex;
+      gap: 0.45rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-card ul li span.icon {
+      margin-top: 0.12rem;
+      font-size: 0.9rem;
+    }
+
+    .hero-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 1.6rem 0;
+    }
+
+    .section-head {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.92rem;
+      color: var(--muted);
+      max-width: 32rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.4rem;
+      align-items: flex-start;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 1.1rem 1.2rem;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .list-check {
+      list-style: none;
+      margin-top: 0.2rem;
+      font-size: 0.88rem;
+    }
+
+    .list-check li {
+      display: flex;
+      gap: 0.45rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .list-check li span.icon {
+      font-size: 0.9rem;
+      margin-top: 0.08rem;
+    }
+
+    /* Contact section */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 1.3rem;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 1rem 1.2rem;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.03);
+      font-size: 0.9rem;
+    }
+
+    .contact-row {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+      gap: 0.7rem;
+      margin-top: 0.4rem;
+    }
+
+    .contact-item strong {
+      display: block;
+      font-size: 0.88rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-item a {
+      font-weight: 500;
+    }
+
+    .map-box {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.04);
+      background: #e6e0d0;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 0;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    .map-box iframe {
+      border: 0;
+      width: 100%;
+      height: 260px;
+    }
+
+    footer {
+      padding: 1.1rem 0 1.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Floating WhatsApp button */
+    .floating-cta {
+      position: fixed;
+      right: 1.1rem;
+      bottom: 1.1rem;
+      z-index: 40;
+    }
+
+    .floating-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.6rem 0.95rem;
+      border-radius: var(--radius-full);
+      background: #25d366;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 0 16px 26px rgba(0,0,0,0.25);
+    }
+
+    .floating-cta a span.icon {
+      font-size: 1.1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 880px) {
+      .hero-inner,
+      .grid-2,
+      .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-card {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .contact-row {
+        grid-template-columns: minmax(0,1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <div class="logo-mark">ॐ</div>
+          <span>Ayurveda Classes</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div>
+            <div class="eyebrow">
+              <span class="dot"></span>
+              Offline Traditional Learning
+            </div>
+
+            <h1>Learn Authentic <span class="highlight">Ayurveda</span> in a Practical Way</h1>
+
+            <p class="hero-subtitle">
+              Join small, offline batches in <strong>Burla, Sambalpur</strong> and learn how to use Ayurvedic principles in daily life – for yourself, your family, or your practice.
+            </p>
+
+            <div class="hero-meta">
+              <div class="meta-item">
+                <strong>Duration</strong>
+                <span>3 months • Weekend / Weekday options</span>
+              </div>
+              <div class="meta-item">
+                <strong>Location</strong>
+                <span>Gopabandhu Chowk, Burla, Sambalpur</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right card -->
+          <aside class="hero-card">
+            <div class="hero-card-inner">
+              <h2>What You’ll Learn</h2>
+              <ul>
+                <li><span class="icon">🌿</span> Basics of Ayurveda – doshas, prakriti, dhatus, agni</li>
+                <li><span class="icon">🍃</span> Daily routines (Dinacharya) & seasonal routines (Ritucharya)</li>
+                <li><span class="icon">🥣</span> Food & digestion – simple diet corrections using Ayurveda</li>
+                <li><span class="icon">🧘‍♀️</span> Simple home remedies & lifestyle corrections</li>
+              </ul>
+
+              <h2>About the Teacher</h2>
+              <p>
+                Dr. Mamata Shukla is an Ayurvedic doctor with 5+ years of experience guiding people towards balanced living using traditional Ayurvedic principles.
+              </p>
+              <p>
+                The teaching style is practical and interactive – with examples, simple charts and real-life cases instead of only memorising shlokas.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">What We Cover in the Course</h2>
+          <p class="section-subtitle">
+            A simple, step-by-step syllabus to help you understand and apply Ayurveda confidently.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Module 1 – Foundations</h3>
+            <ul class="list-check">
+              <li><span class="icon">📚</span> What is Ayurveda? Basic principles & philosophy</li>
+              <li><span class="icon">📚</span> Panchamahabhuta – the five elements</li>
+              <li><span class="icon">📚</span> Tridosha – Vata, Pitta, Kapha in simple language</li>
+              <li><span class="icon">📚</span> Prakriti (body constitution) – understanding your type</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Module 2 – Lifestyle & Food</h3>
+            <ul class="list-check">
+              <li><span class="icon">🕒</span> Dinacharya – ideal daily routine</li>
+              <li><span class="icon">🌤</span> Ritucharya – seasonal routines</li>
+              <li><span class="icon">🥗</span> Basic Ayurvedic nutrition principles</li>
+              <li><span class="icon">🔥</span> Agni (digestive fire) & simple corrections</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Contact Details</h2>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-card">
+            <div class="contact-row">
+              <div class="contact-item">
+                <strong>Call or WhatsApp</strong>
+                <p>+91-9439496280</p>
+              </div>
+
+              <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:mamatashukla216@gmail.com">mamatashukla216@gmail.com</a>
+              </div>
+
+              <div class="contact-item">
+                <strong>Address</strong>
+                <span>Gopabandhu Chowk, Burla, Sambalpur, Odisha - 768017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d433.8068105279424!2d83.87683327474143!3d21.49261927903333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1763811494325!5m2!1sen!2sin"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>© <span id="year">2025</span> [Your Ayurveda Class Name]. All rights reserved.</div>
+        <div>Offline Ayurvedic learning • Burla</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <div class="floating-cta">
+    <a href="https://wa.me/919439496280?text=I%20am%20interested%20in%20your%20Ayurvedic%20classes">
+      <span class="icon">💬</span>
+      <span>WhatsApp us</span>
+    </a>
+  </div>
+</div>
+
+<script>
+  // Auto set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
